@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* a {
+    text-decoration: none;
+}
+
+* li {
+    list-style: none;
+}
+
+.navBar {
+    display: flex;
+    width: 85%;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    height: 15vh;
+}
+
+.navBar ul {
+    display: flex;
+    align-items: center;
+}
+
+  .navBar ul li {
+    padding: 0 25px;
+}
+
+.navBar ul li a {
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+.navBar .logo a {
+    font-size: 2.3rem;
+    color: #000;
+}
+
+.image .slide {
+    width: 900px;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 10px solid rgb(red, green, blue);
+    border-radius: 10px;
+}
+
+.slide figure img {
+    width: 20%;
+    height: 350px;
+    float: left;
+}
+
+.slide figure {
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    animation: SUNvo 17s infinite linear;
+}
+
+@keyframes SUNvo{
+    0%{left: 0%;}
+    15%{left: 0%;}
+    20%{left: -100%;}
+    35%{left: -100%;}
+    40%{left: -200%;}
+    60%{left: -200%;}
+    65%{left: -300%;}
+    80%{left: -300%;}
+    85%{left: -400%;}
+    100%{left: -400%;}
+}
